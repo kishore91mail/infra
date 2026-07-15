@@ -85,3 +85,5 @@ module "secrets_manager" {
   db_host     = module.rds.db_instance_address
   jwt_secret  = var.jwt_secret
 }
+# Initial dev environment setup
+data "aws_caller_identity" "current" {}
